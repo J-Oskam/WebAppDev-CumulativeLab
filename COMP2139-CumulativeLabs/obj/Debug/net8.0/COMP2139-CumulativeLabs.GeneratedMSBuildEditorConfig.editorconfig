@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = COMP2139_CumulativeLabs
 build_property.RootNamespace = COMP2139_CumulativeLabs
@@ -18,12 +26,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Justin\OneDrive\Desktop\My Stuff\School\Computer Programming Analysis\Semester 4\COMP 2139 - Web App Dev\Lab\COMP2139-CumulativeLabs
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Shared/Error.cshtml]
