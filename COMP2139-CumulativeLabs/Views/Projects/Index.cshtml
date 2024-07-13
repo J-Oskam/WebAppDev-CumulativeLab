@@ -1,0 +1,31 @@
+﻿@model List<Project>
+
+@{
+    ViewData["Title"] = "Projects"; //Overrides the Title tag that has default implementation in the _layout.cshtml file
+}
+
+<h2>Projects</h2>
+
+@if (Model.Any()) { //If the model has any data then display the projects
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+        @foreach(Project project in Model){
+            <tbody>
+                <tr>
+                    <td>@project.ProjectId</td>
+                    <td>@project.Name</td>
+                    <td>@project.Description</td>
+                </tr>
+            </tbody>
+        }
+    </table>
+} else {
+    <p>No projects found</p>
+}
