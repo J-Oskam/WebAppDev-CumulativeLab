@@ -45,6 +45,7 @@ namespace COMP2139_CumulativeLabs.Controllers {
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, [Bind("ProjectId, Name, Description")] Project project) {
             if (ModelState.IsValid) {
                 try {

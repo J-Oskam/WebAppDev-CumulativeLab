@@ -5,10 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|c:\\users\\justin\\onedrive\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\lab\\comp2139-cumulativelabs\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|c:\\users\\justin\\onedrive\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\lab\\comp2139-cumulativelabs\\views\\projects\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|solutionrelative:views\\projects\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,22 +44,10 @@
               "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
               "ToolTip": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Controllers\\ProjectsController.cs",
               "RelativeToolTip": "Controllers\\ProjectsController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAuwD8AAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAA9wDAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T17:38:31.304Z",
+              "WhenOpened": "2024-07-14T19:09:55.785Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Views\\Projects\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Projects\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Views\\Projects\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Projects\\Edit.cshtml",
-              "ViewState": "AQIAABAAAAAAAAAAAAAWwDAAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T17:35:07.895Z"
             }
           ]
         }
