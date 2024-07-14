@@ -1,39 +1,89 @@
 ﻿using COMP2139_CumulativeLabs.Data;
 using COMP2139_CumulativeLabs.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace COMP2139_CumulativeLabs.Controllers {
     public class ProjectsController : Controller {
 
-        private readonly ApplicationDbContext _context;
-        public ProjectsController(ApplicationDbContext context) {
-            _context = context;
+        private readonly ApplicationDbContext _dbContext;
+        public ProjectsController(ApplicationDbContext dbContext) {
+            _dbContext = dbContext;
         }
 
-        [HttpGet]
         public IActionResult Index() {
-            var projects = new List<Project>() {
-                new Project { ProjectId = 1, Name = "Project 1", Description = "first project"},
-                new Project { ProjectId = 4, Name = "Project 4", Description = "fourth project"}
-            };
-            return View(projects);
+            
+            return View(_dbContext.Projects.ToList());
         }
 
-        [HttpGet]
         public IActionResult Details(int id) {
-            var project = new Project { ProjectId = id, Name = "Project " + id, Description = "Details of project " + id };
+            var project = _dbContext.Projects.FirstOrDefault(p => p.ProjectId == id);
             return View(project);
         }
 
-        [HttpGet]
         public IActionResult Create() {
             return View();
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Project project) {
-            return RedirectToAction("Index");
+            if (ModelState.IsValid) {
+                _dbContext.Add(project);
+                _dbContext.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(project);
         }
 
+        public IActionResult Edit(int id) {
+            var project = _dbContext.Projects.Find(id);
+            if (project == null) {
+                return NotFound();
+            }
+            return View(project);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id, [Bind("ProjectId, Name, Description")] Project project) {
+            if (ModelState.IsValid) {
+                try {
+                    _dbContext.Update(project);
+                    _dbContext.SaveChanges();
+                } catch(DbUpdateConcurrencyException) {
+                    if (!ProjectExists(project.ProjectId)) {
+                        return NotFound();
+                    } else {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            return View(project);
+        }
+
+        public IActionResult Delete(int id) {
+            var project = _dbContext.Projects.Find(id);
+            if (project == null) {
+                return NotFound();
+            }
+            return View(project);
+        }
+
+        [HttpPost, ActionName("DeleteConfirmed")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int ProjectId) {
+            var project = _dbContext.Projects.Find(ProjectId);
+            if (project != null) {
+                _dbContext.Remove(project);
+                _dbContext.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return NotFound();
+        }
+
+        private bool ProjectExists(int id) {
+            return _dbContext.Projects.Any(p => p.ProjectId == id);
+        }
     }
 }

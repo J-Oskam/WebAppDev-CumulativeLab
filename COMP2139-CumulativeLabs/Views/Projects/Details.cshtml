@@ -13,10 +13,10 @@
 
           <dl class="row">
             <dt class="col-sm-3">Project Id</dt>
-            <dd class="col-sm-9"@Model.ProjectId></dd>
+            <dd class="col-sm-9">@Model.ProjectId</dd>
           </dl>
 
-        <a asp-controller="Projects" asp-action="Edit" asp-route-id="@Model.ProjectId" class="btn btn-primary">Edit</a>
-        <a asp-controller="Projects" asp-action="Index" class="btn btn-secondary">Back to list</a>
+        <a asp-action="Edit" asp-route-id="@Model.ProjectId" class="btn btn-primary">Edit</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to list</a>
     </div>
 </div>

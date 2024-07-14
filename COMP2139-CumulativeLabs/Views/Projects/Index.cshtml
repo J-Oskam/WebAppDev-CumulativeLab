@@ -13,19 +13,27 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Description</th>
+                <td>Actions</td>
             </tr>
         </thead>
 
-        @foreach(Project project in Model){
+        @foreach(var project in Model){
             <tbody>
                 <tr>
                     <td>@project.ProjectId</td>
                     <td>@project.Name</td>
                     <td>@project.Description</td>
+                    <td>
+                        <a class="btn btn-secondary" asp-action="Details" asp-route-id="@project.ProjectId">Details</a>
+                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@project.ProjectId">Delete</a>
+                    </td>
                 </tr>
+                
             </tbody>
         }
     </table>
 } else {
     <p>No projects found</p>
 }
+
+<a class="btn btn-primary" asp-controller="Projects" asp-action="Create">Create Project</a>
