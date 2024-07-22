@@ -4,6 +4,7 @@ using COMP2139_CumulativeLabs.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace COMP2139_CumulativeLabs.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240715172756_AddedProjectTasksControllerAndDBContextEntry")]
+    partial class AddedProjectTasksControllerAndDBContextEntry
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,17 +83,12 @@ namespace COMP2139_CumulativeLabs.Migrations
             modelBuilder.Entity("COMP2139_CumulativeLabs.Models.ProjectTask", b =>
                 {
                     b.HasOne("COMP2139_CumulativeLabs.Models.Project", "Project")
-                        .WithMany("ProjectTasks")
+                        .WithMany()
                         .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Project");
-                });
-
-            modelBuilder.Entity("COMP2139_CumulativeLabs.Models.Project", b =>
-                {
-                    b.Navigation("ProjectTasks");
                 });
 #pragma warning restore 612, 618
         }

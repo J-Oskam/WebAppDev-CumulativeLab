@@ -12,12 +12,12 @@ namespace COMP2139_CumulativeLabs.Controllers {
         }
 
         public IActionResult Index() {
-            
             return View(_dbContext.Projects.ToList());
         }
 
         public IActionResult Details(int id) {
-            var project = _dbContext.Projects.FirstOrDefault(p => p.ProjectId == id);
+            var project = _dbContext.Projects
+                .FirstOrDefault(p => p.ProjectId == id);
             return View(project);
         }
 

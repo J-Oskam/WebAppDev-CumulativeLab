@@ -6,6 +6,8 @@
 
 <h2>Projects</h2>
 
+<a class="btn btn-primary" asp-action="Create">Create Project</a>
+
 @if (Model.Any()) { //If the model has any data then display the projects
     <table class="table">
         <thead>
@@ -13,7 +15,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Description</th>
-                <td>Actions</td>
+                <th>Actions</th>
             </tr>
         </thead>
 
@@ -24,16 +26,15 @@
                     <td>@project.Name</td>
                     <td>@project.Description</td>
                     <td>
-                        <a class="btn btn-secondary" asp-action="Details" asp-route-id="@project.ProjectId">Details</a>
+                        <a class="btn btn-info" asp-action="Details" asp-route-id="@project.ProjectId">Details</a>
+                        <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@project.ProjectId">Edit</a>
                         <a class="btn btn-danger" asp-action="Delete" asp-route-id="@project.ProjectId">Delete</a>
+                        <a class="btn btn-warning" asp-controller="Task" asp-action="Index" asp-route-id="@project.ProjectId">View Tasks</a>
                     </td>
                 </tr>
-                
             </tbody>
         }
     </table>
 } else {
     <p>No projects found</p>
 }
-
-<a class="btn btn-primary" asp-controller="Projects" asp-action="Create">Create Project</a>

@@ -17,5 +17,8 @@ namespace COMP2139_CumulativeLabs.Models {
         public DateTime EndDate { get; set; }
 
         public string? Status { get; set; }
+
+        //Navigation property allowing one to many relationship with ProjectTask. Many tasks can belong to one project
+        public List<ProjectTask>? ProjectTasks  { get; set; }
     }
 }
