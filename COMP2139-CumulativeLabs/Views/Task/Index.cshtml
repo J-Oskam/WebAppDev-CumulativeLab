@@ -15,9 +15,8 @@
             <th>Actions</th>
         </tr>
     </thead>
-
-    @foreach (var task in Model) {
-        <tbody>
+    <tbody>
+        @foreach (var task in Model) {
             <tr>
                 <td>@task.ProjectTaskId</td>
                 <td>@task.Title</td>
@@ -29,8 +28,8 @@
                     <a asp-action="Delete" asp-route-id="@task.ProjectTaskId" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
-        </tbody>
-    }
+        }
+    </tbody>
 </table>
 
 <a asp-action="Create" asp-route-projectId="@ViewBag.ProjectId" class="btn btn-primary">Create Task</a>

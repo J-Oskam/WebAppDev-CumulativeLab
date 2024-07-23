@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|c:\\users\\justin\\onedrive\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\lab\\comp2139-cumulativelabs\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|c:\\users\\justin\\onedrive\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\lab\\comp2139-cumulativelabs\\views\\task\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|solutionrelative:views\\task\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|c:\\users\\justin\\onedrive\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\lab\\comp2139-cumulativelabs\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|solutionrelative:views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|c:\\users\\justin\\onedrive\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\lab\\comp2139-cumulativelabs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|c:\\users\\justin\\onedrive\\desktop\\my stuff\\school\\computer programming analysis\\semester 4\\comp 2139 - web app dev\\lab\\comp2139-cumulativelabs\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53A03720-FD27-4A13-A36D-9AEE082753DE}|COMP2139-CumulativeLabs.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,42 +46,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T15:11:31.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Controllers\\TaskController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TaskController.cs",
-              "ToolTip": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Controllers\\TaskController.cs",
-              "RelativeToolTip": "Controllers\\TaskController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T02:35:53.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Views\\Task\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Task\\Index.cshtml",
               "ToolTip": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Views\\Task\\Index.cshtml",
               "RelativeToolTip": "Views\\Task\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-22T02:04:27.396Z",
+              "WhenOpened": "2024-07-23T01:33:34.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Views\\Task\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Task\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Views\\Task\\Details.cshtml",
+              "RelativeToolTip": "Views\\Task\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T00:48:03.419Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "Controllers\\TaskController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T16:53:16.589Z"
             }
           ]
         }

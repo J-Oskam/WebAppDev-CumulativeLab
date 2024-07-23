@@ -12,7 +12,6 @@ namespace COMP2139_CumulativeLabs.Controllers {
             _dbContext = dbContext;
         }
 
-        [HttpGet]
         public IActionResult Index(int projectId) {
             var tasks = _dbContext.ProjectTasks
                 .Where(pt => pt.ProjectId == projectId)
@@ -25,7 +24,7 @@ namespace COMP2139_CumulativeLabs.Controllers {
         public IActionResult Details(int id) { //.include means give access to otherside of the entity, that being the project navigation property
             var task = _dbContext.ProjectTasks
                 .Include(pt => pt.Project)
-                .FirstOrDefault(task => task.ProjectId == id); //will return the first value found or null
+                .FirstOrDefault(pt => pt.ProjectId == id); //will return the first value found or null
 
             if(task == null) {
                 return NotFound();
@@ -67,8 +66,8 @@ namespace COMP2139_CumulativeLabs.Controllers {
             if (task == null) {
                 return NotFound();
             }
-
-            ViewBag.Projects = new SelectList(_dbContext.Projects, "ProjectId", "Name", task.ProjectId);
+            //I don't think this viewbag is used at all in the delete get method
+            //ViewBag.Projects = new SelectList(_dbContext.Projects, "ProjectId", "Name", task.ProjectId);
             return View(task);
         }
 
