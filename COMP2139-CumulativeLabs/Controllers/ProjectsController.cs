@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace COMP2139_CumulativeLabs.Controllers {
+    [Route("Projects")]
     public class ProjectsController : Controller {
 
         private readonly ApplicationDbContext _dbContext;
@@ -15,17 +16,19 @@ namespace COMP2139_CumulativeLabs.Controllers {
             return View(_dbContext.Projects.ToList());
         }
 
+        [HttpGet("Details/{id:int}")]
         public IActionResult Details(int id) {
             var project = _dbContext.Projects
                 .FirstOrDefault(p => p.ProjectId == id);
             return View(project);
         }
 
+        [HttpGet("Create")]
         public IActionResult Create() {
             return View();
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Project project) {
             if (ModelState.IsValid) {
@@ -36,6 +39,7 @@ namespace COMP2139_CumulativeLabs.Controllers {
             return View(project);
         }
 
+        [HttpGet("Edit/{id:int}")]
         public IActionResult Edit(int id) {
             var project = _dbContext.Projects.Find(id);
             if (project == null) {
@@ -44,7 +48,7 @@ namespace COMP2139_CumulativeLabs.Controllers {
             return View(project);
         }
 
-        [HttpPost]
+        [HttpPost("Edit/{id:int}")]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, [Bind("ProjectId, Name, Description")] Project project) {
             if (ModelState.IsValid) {
@@ -63,6 +67,7 @@ namespace COMP2139_CumulativeLabs.Controllers {
             return View(project);
         }
 
+        [HttpGet("Delete/{id:int}")]
         public IActionResult Delete(int id) {
             var project = _dbContext.Projects.Find(id);
             if (project == null) {
@@ -71,10 +76,11 @@ namespace COMP2139_CumulativeLabs.Controllers {
             return View(project);
         }
 
+        [HttpPost("DeleteConfirmed/{id:int}")]
         [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int ProjectId) {
-            var project = _dbContext.Projects.Find(ProjectId);
+        public IActionResult DeleteConfirmed(int projectId) {
+            var project = _dbContext.Projects.Find(projectId);
             if (project != null) {
                 _dbContext.Remove(project);
                 _dbContext.SaveChanges();
@@ -85,6 +91,25 @@ namespace COMP2139_CumulativeLabs.Controllers {
 
         private bool ProjectExists(int id) {
             return _dbContext.Projects.Any(p => p.ProjectId == id);
+        }
+
+        [HttpGet("Search/{searchString?}")]
+        public async Task<IActionResult> Search(string searchString) {
+
+            var projectsQuery = from p in _dbContext.Projects
+                                select p;
+
+            bool searchPerformed = !string.IsNullOrEmpty(searchString);
+
+            if (searchPerformed) {
+                projectsQuery = projectsQuery.Where(p => p.Name.Contains(searchString)
+                                                || p.Description.Contains(searchString));
+            }
+
+            var projects = await projectsQuery.ToListAsync();
+            ViewData["SearchPerformed"] = searchPerformed;
+            ViewData["SearchString"] = searchString;
+            return View("Index", projects);
         }
     }
 }

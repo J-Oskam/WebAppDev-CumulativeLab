@@ -2,11 +2,11 @@
 
 @{
     ViewData["Title"] = "Projects"; //Overrides the Title tag that has default implementation in the _layout.cshtml file
+    bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
+    string searchString = ViewData["SearchString"] as string;
 }
 
 <h2>Projects</h2>
-
-<a class="btn btn-primary" asp-action="Create">Create Project</a>
 
 @if (Model.Any()) { //If the model has any data then display the projects
     <table class="table">
@@ -35,5 +35,11 @@
         </tbody>
     </table>
 } else {
-    <p>No projects found</p>
+    if (searchPerformed) {
+        <p>No projects with the keyword: "@searchString" found.</p>
+    } else {
+        <p>No projects found</p>
+    }
 }
+
+<a class="btn btn-primary" asp-action="Create">Create Project</a>
