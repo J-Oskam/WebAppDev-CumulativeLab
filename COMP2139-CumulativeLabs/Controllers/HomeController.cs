@@ -30,9 +30,9 @@ namespace COMP2139_CumulativeLabs.Controllers {
             return RedirectToAction("Index", "Home");
         }
 
-        public IActionResult Notfound(int statusCode) {
+        public IActionResult NotFound(int statusCode) {
             if(statusCode == 404) {
-                return View("NotFound");
+                return View();
             }
             return View("Error");
         }
