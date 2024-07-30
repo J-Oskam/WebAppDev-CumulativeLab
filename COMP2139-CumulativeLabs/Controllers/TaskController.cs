@@ -78,6 +78,7 @@ namespace COMP2139_CumulativeLabs.Controllers {
         }
 
         [HttpPost("DeleteConfirmed/{id:int}")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int projectTaskId) {
             var task = _dbContext.ProjectTasks.Find(projectTaskId);
