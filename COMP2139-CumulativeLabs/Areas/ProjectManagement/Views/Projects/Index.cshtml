@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Projects"; //Overrides the Title tag that has default implementation in the _layout.cshtml file
+    //Lab 5 - search parameters
     bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
     string searchString = ViewData["SearchString"] as string;
 }
@@ -15,7 +16,9 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Summary</th>
                 <th>Actions</th>
+
             </tr>
         </thead>
         <tbody>
@@ -24,6 +27,7 @@
                     <td>@project.ProjectId</td>
                     <td>@project.Name</td>
                     <td>@project.Description</td>
+                    <td>@await Component.InvokeAsync("ProjectSummary", new { projectId = project.ProjectId })</td>
                     <td>
                         <a asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-info">Details</a>
                         <a asp-action="Edit" asp-route-id="@project.ProjectId" class="btn btn-secondary">Edit</a>

@@ -35,7 +35,7 @@
 
 <form asp-action="DeleteConfirmed" method="post">
     <input type="hidden" asp-for="ProjectTaskId" /> <!-- passes projectId in a hidden field to the delete confirmed action without exposing it to the user-->
-    @* @Html.HiddenFor(model => model.ProjectId); <-- these two hidden input fields are equivalent except for the different between what @html rendering provides you over a simple input field like above *@
+    @* @Html.HiddenFor(model => model.ProjectTaskId); <-- these two hidden input fields are equivalent except for the different between what @html rendering provides you over a simple input field like above *@
         
     <input type="submit" value="Delete" class="btn btn-danger" />
     <a asp-action="Index" asp-route-projectId="@Model.ProjectId" class="btn btn-secondary">Back to List</a>

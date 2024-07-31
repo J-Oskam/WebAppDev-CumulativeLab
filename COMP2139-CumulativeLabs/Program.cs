@@ -26,6 +26,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Projects}/{action=Index}/{id?}");
+
 //app.MapDefaultControllerRoute(); // <-- Both of these map to the same location
 app.MapControllerRoute(            // <--
     name: "default",

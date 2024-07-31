@@ -1,13 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace COMP2139_CumulativeLabs.Models {
-    public class ProjectTask {
+namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Models
+{
+    public class ProjectTask
+    {
         [Key]
         public int ProjectTaskId { get; set; }
 
         [Required]
+        [Display(Name = "Task Name")]
+        [StringLength(40, MinimumLength = 2, ErrorMessage = "The Task name must be between 2 and 40 characters long.")]
         public string? Title { get; set; } //required with optional ? means it will either have a value or be null
 
+        [StringLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
         [Required]
         public string? Description { get; set; }
 

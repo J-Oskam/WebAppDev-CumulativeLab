@@ -26,6 +26,54 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Justin\OneDrive\Desktop\My Stuff\School\Computer Programming Analysis\Semester 4\COMP 2139 - Web App Dev\Lab\COMP2139-CumulativeLabs
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Projects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcUHJvamVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Projects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcUHJvamVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Projects/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcUHJvamVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Projects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcUHJvamVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Projects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcUHJvamVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Task/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcVGFza1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Task/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcVGFza1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Task/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcVGFza1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Task/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcVGFza1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/Task/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcVGFza1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Areas/ProjectManagement/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvamVjdE1hbmFnZW1lbnRcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,52 +86,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Projects/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Projects/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Projects/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Projects/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Projects/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcSW5kZXguY3NodG1s
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Shared/Components/ProjectSummary/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvamVjdFN1bW1hcnlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Shared/_footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9mb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Shared/_header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9oZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Task/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Task/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Task/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Task/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/Task/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFza1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Justin/OneDrive/Desktop/My Stuff/School/Computer Programming Analysis/Semester 4/COMP 2139 - Web App Dev/Lab/COMP2139-CumulativeLabs/Views/_ViewImports.cshtml]
