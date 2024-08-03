@@ -16,16 +16,18 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
             _dbContext = dbContext;
         }
 
-        public IActionResult Index()
+
+        public async Task<IActionResult> Index()
         {
-            return View(_dbContext.Projects.ToList());
+            var projects = await _dbContext.Projects.ToListAsync();
+            return View(projects);
         }
 
         [HttpGet("Details/{id:int}")]
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var project = _dbContext.Projects
-                .FirstOrDefault(p => p.ProjectId == id);
+            var project = await _dbContext.Projects
+                .FirstOrDefaultAsync(p => p.ProjectId == id);
             return View(project);
         }
 
@@ -37,21 +39,21 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
 
         [HttpPost("Create")]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Project project)
+        public async Task<IActionResult> Create(Project project)
         {
             if (ModelState.IsValid)
             {
-                _dbContext.Add(project);
-                _dbContext.SaveChanges();
+                await _dbContext.AddAsync(project);
+                await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
             return View(project);
         }
 
         [HttpGet("Edit/{id:int}")]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var project = _dbContext.Projects.Find(id);
+            var project = await _dbContext.Projects.FindAsync(id);
             if (project == null)
             {
                 return NotFound();
@@ -61,14 +63,14 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
 
         [HttpPost("Edit/{id:int}")]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("ProjectId, Name, Description")] Project project)
+        public async Task<IActionResult> Edit(int id, [Bind("ProjectId, Name, Description")] Project project)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _dbContext.Update(project);
-                    _dbContext.SaveChanges();
+                    _dbContext.Update(project); //there is no async for update because it happens in memory and isn't pushed to the db until .SaveChanges(). Memory is quick enough not to need async
+                    await _dbContext.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -87,9 +89,9 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
         }
 
         [HttpGet("Delete/{id:int}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var project = _dbContext.Projects.Find(id);
+            var project = await _dbContext.Projects.FirstOrDefaultAsync(p => p.ProjectId == id);
             if (project == null)
             {
                 return NotFound();
@@ -100,14 +102,14 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
         //[HttpPost("DeleteConfirmed/{projectId:int}")]
         [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int projectId)
+        public async Task<IActionResult> DeleteConfirmed(int projectId)
         {
-            var project = _dbContext.Projects.Find(projectId);
+            var project = await _dbContext.Projects.FindAsync(projectId);
             if (project != null)
             {
                 _dbContext.Remove(project);
-                _dbContext.SaveChanges();
-                return RedirectToAction("Index");
+                await _dbContext.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
             return NotFound();
         }
@@ -120,7 +122,6 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
         [HttpGet("Search/{searchString?}")]
         public async Task<IActionResult> Search(string searchString)
         {
-
             var projectsQuery = from p in _dbContext.Projects
                                 select p;
 

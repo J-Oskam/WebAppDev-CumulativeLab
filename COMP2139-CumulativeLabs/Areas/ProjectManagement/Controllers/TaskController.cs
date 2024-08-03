@@ -19,22 +19,22 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
         }
 
         [HttpGet("Index/{projectId:int}")]
-        public IActionResult Index(int projectId)
+        public async Task<IActionResult> Index(int projectId)
         {
-            var tasks = _dbContext.ProjectTasks
+            var tasks = await _dbContext.ProjectTasks
                 .Where(t => t.ProjectId == projectId)
-                .ToList();
+                .ToListAsync();
 
             ViewBag.ProjectId = projectId;
             return View(tasks);
         }
 
         [HttpGet("Details/{id:int}")]
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         { //.include means give access to otherside of the entity, that being the project navigation property
-            var task = _dbContext.ProjectTasks
+            var task = await _dbContext.ProjectTasks
                 .Include(t => t.Project)
-                .FirstOrDefault(t => t.ProjectTaskId == id); //will return the first value found or null
+                .FirstOrDefaultAsync(t => t.ProjectTaskId == id); //will return the first value found or null
 
             if (task == null)
             {
@@ -44,9 +44,9 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
         }
 
         [HttpGet("Create/{projectId:int}")]
-        public IActionResult Create(int projectId)
+        public async Task<IActionResult> Create(int projectId)
         {
-            var project = _dbContext.Projects.Find(projectId);
+            var project = await _dbContext.Projects.FindAsync(projectId);
             if (project == null)
             {
                 return NotFound();
@@ -62,69 +62,71 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
 
         [HttpPost("Create/{projectId:int}")]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Title", "Description", "ProjectId")] ProjectTask task)
+        public async Task<IActionResult> Create([Bind("Title", "Description", "ProjectId")] ProjectTask task)
         {
             if (ModelState.IsValid)
             {
-                _dbContext.ProjectTasks.Add(task);
-                _dbContext.SaveChanges();
+                await _dbContext.ProjectTasks.AddAsync(task);
+                await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Index", new { task.ProjectId });
             }
 
-            ViewBag.Projects = new SelectList(_dbContext.Projects, "ProjectId", "Name", task.ProjectId);
+            var projects = await _dbContext.Projects.ToListAsync();
+
+            ViewBag.Projects = new SelectList(projects, "ProjectId", "Name", task.ProjectId);
             return View(task);
         }
 
         [HttpGet("Delete/{id:int}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var task = _dbContext.ProjectTasks
+            var task = await _dbContext.ProjectTasks
                 .Include(t => t.Project)
-                .FirstOrDefault(t => t.ProjectTaskId == id);
+                .FirstOrDefaultAsync(t => t.ProjectTaskId == id);
 
             if (task == null)
             {
                 return NotFound();
             }
-            //I don't think this viewbag is used at all in the delete get method
-            //ViewBag.Projects = new SelectList(_dbContext.Projects, "ProjectId", "Name", task.ProjectId);
             return View(task);
         }
 
-        //[HttpPost("DeleteConfirmed/{projectTaskId:int}")]
+        [HttpPost("DeleteConfirmed/{projectTaskId:int}")]
         [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int projectTaskId)
+        public async Task<IActionResult> DeleteConfirmed(int projectTaskId)
         {
-            var task = _dbContext.ProjectTasks.Find(projectTaskId);
+            var task = await _dbContext.ProjectTasks.FindAsync(projectTaskId);
             if (task != null)
             {
-                _dbContext.Remove(task);
-                _dbContext.SaveChanges();
+                _dbContext.ProjectTasks.Remove(task);
+                await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Index", new { task.ProjectId });
             }
             return NotFound();
         }
 
         [HttpGet("Edit/{id:int}")]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var task = _dbContext.ProjectTasks
+            var task = await _dbContext.ProjectTasks
                 .Include(t => t.Project)
-                .FirstOrDefault(t => t.ProjectTaskId == id);
+                .FirstOrDefaultAsync(t => t.ProjectTaskId == id);
 
             if (task == null)
             {
                 return NotFound();
             }
 
-            ViewBag.Projects = new SelectList(_dbContext.Projects, "ProjectId", "Name", task.ProjectId);
+            var projects = await _dbContext.Projects.ToListAsync();
+
+            ViewBag.Projects = new SelectList(projects, "ProjectId", "Name", task.ProjectId);
             return View(task);
         }
 
         [HttpPost("Edit/{id:int}")]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("ProjectTaskId", "Title", "Description", "ProjectId")] ProjectTask task)
+        public async Task<IActionResult> Edit(int id, [Bind("ProjectTaskId", "Title", "Description", "ProjectId")] ProjectTask task)
         {
             if (id != task.ProjectTaskId)
             {
@@ -134,11 +136,13 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Controllers
             if (ModelState.IsValid)
             {
                 _dbContext.ProjectTasks.Update(task);
-                _dbContext.SaveChanges();
+                await _dbContext.SaveChangesAsync();
                 return RedirectToAction("Index", new { projectId = task.ProjectId });
             }
 
-            ViewBag.Projects = new SelectList(_dbContext.Projects, "ProjectId", "Name", task.ProjectId);
+            var projects = await _dbContext.Projects.ToListAsync();
+
+            ViewBag.Projects = new SelectList(projects, "ProjectId", "Name", task.ProjectId);
             return View(task);
         }
 

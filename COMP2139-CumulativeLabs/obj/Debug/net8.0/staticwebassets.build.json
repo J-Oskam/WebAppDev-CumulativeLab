@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5nlTg1xkmJDElpsjkPeYDD5+Jy3OzswVTq0pwwVLils=",
+  "Hash": "71T7opxF9vMP28qioWnXgMujwSs8OoyCOt0bAl29LBc=",
   "Source": "COMP2139-CumulativeLabs",
   "BasePath": "_content/COMP2139-CumulativeLabs",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\wwwroot\\js\\projectComments.js",
+      "SourceId": "COMP2139-CumulativeLabs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\wwwroot\\",
+      "BasePath": "_content/COMP2139-CumulativeLabs",
+      "RelativePath": "js/projectComments.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\projectComments.js"
     },
     {
       "Identity": "C:\\Users\\Justin\\OneDrive\\Desktop\\My Stuff\\School\\Computer Programming Analysis\\Semester 4\\COMP 2139 - Web App Dev\\Lab\\COMP2139-CumulativeLabs\\wwwroot\\js\\site.js",
