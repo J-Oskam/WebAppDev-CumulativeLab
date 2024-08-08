@@ -12,8 +12,8 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Models
         [StringLength(40, MinimumLength = 2, ErrorMessage = "The Task name must be between 2 and 40 characters long.")]
         public string? Title { get; set; } //required with optional ? means it will either have a value or be null
 
-        [StringLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
         [Required]
+        [StringLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
         public string? Description { get; set; }
 
         //foreign key for Project

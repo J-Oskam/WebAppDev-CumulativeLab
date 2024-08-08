@@ -36,7 +36,7 @@ namespace COMP2139_CumulativeLabs.Areas.ProjectManagement.Models
             if (EndDate < StartDate)
             {
                 //the yield keyword iterates the method to produce a sequence of values
-                yield return new ValidationResult("Start date cannot be before end date", new[] { nameof(EndDate), nameof(StartDate) });
+                yield return new ValidationResult("Start date must be before end date", new[] { nameof(EndDate), nameof(StartDate) });
             }
         }
     }
